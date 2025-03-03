@@ -322,12 +322,12 @@
 			<table style="width: 100%; text-align: center; border-collapse: collapse;">
 			  <tr>
 				<td style="text-align: center;">
-				  <img src="part6_cow1.png" width="350px"/>
-				  <figcaption>Here's the cow mesh before subdivision.</figcaption>
+				  <img src="part6_torus1.png" width="350px"/>
+				  <figcaption>Here's the torus mesh before subdivision.</figcaption>
 				</td>
 				<td style="text-align: center;">
-				  <img src="part6_cow2.png" width="350px"/>
-				  <figcaption>Here's the cow mesh after subdivision.</figcaption>
+				  <img src="part6_torus2.png" width="350px"/>
+				  <figcaption>Here's the torus mesh after subdivision.</figcaption>
 				</td>
 			  </tr>
 			</table>
@@ -336,12 +336,12 @@
 		<p>After applying Loop Subdivision, the mesh undergoes significant smoothing, as seen in the transition between 
 			the two images. Initially, the model has a lower-resolution mesh with visible triangular faces and a more 
 			faceted appearance. After subdivision, the mesh becomes much denser, with a finer distribution of vertices, 
-			resulting in a smoother, more organic shape. However, this process also causes sharp corners and edges, such as 
-			those on the horns, ears, and snout, to become more rounded and less distinct. This effect occurs because Loop 
-			Subdivision refines the mesh by averaging vertex positions, which inherently reduces sharp features. One way to 
-			mitigate this smoothing effect is by pre-splitting edges or adding extra edge loops before subdivision. By 
-			placing edges closer together in areas that need to retain sharpness, the algorithm is less likely to smooth 
-			them out excessively, helping to preserve the original structure of the model.
+			resulting in a smoother, more organic shape. However, this process also causes sharp corners and edges to become 
+			more rounded and less distinct. This effect occurs because Loop Subdivision refines the mesh by averaging vertex 
+			positions, which inherently reduces sharp features. One way to mitigate this smoothing effect is by pre-splitting 
+			edges or adding extra edge loops before subdivision. By placing edges closer together in areas that need to retain 
+			sharpness, the algorithm is less likely to smooth them out excessively, helping to preserve the original structure 
+			of the model.
 		</p>
 
 		<p>Here's the loop subdivision of the cube: </p>
