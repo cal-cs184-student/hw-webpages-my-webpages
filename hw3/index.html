@@ -136,11 +136,11 @@
 			<table style="width: 100%; text-align: center; border-collapse: collapse;">
 			  <tr>
 				<td style="text-align: center;">
-				  <img src="Cow.png" width="400px"/>
+				  <img src="Cow.png" width="300px"/>
 				  <figcaption>Here's the cow with normal shading.</figcaption>
 				</td>
 				<td style="text-align: center;">
-				  <img src="CBspheres.png" width="400px"/>
+				  <img src="CBspheres.png" width="300px"/>
 				  <figcaption>Here's the sphere with normal shading.</figcaption>
 				</td>
 			  </tr>
@@ -173,18 +173,18 @@
 			<table style="width: 100%; text-align: center; border-collapse: collapse;">
 			  <tr>
 				<td style="text-align: center;">
-				  <img src="cblucy.png" width="400px"/>
+				  <img src="cblucy.png" width="300px"/>
 				</td>
 				<td style="text-align: center;">
-				  <img src="wall-e.png" width="400px"/>
+				  <img src="wall-e.png" width="300px"/>
 				</td>
 			  </tr>
 			  <tr>
 				<td style="text-align: center;">
-				  <img src="dragon.png" width="400px"/>
+				  <img src="dragon.png" width="300px"/>
 				</td>
 				<td style="text-align: center;">
-				  <img src="maxplanck.png" width="400px"/>
+				  <img src="maxplanck.png" width="300px"/>
 				</td>
 			  </tr>
 			</table>
@@ -196,31 +196,31 @@
 			<table style="width: 100%; text-align: center; border-collapse: collapse;">
 			  <tr>
 				<td style="text-align: center;">
-				  <img src="skyslow.png" width="400px"/>
+				  <img src="skyslow.png" width="300px"/>
 				  <figcaption>This took 1745 seconds, which is 29 minutes!</figcaption>
 				</td>
 				<td style="text-align: center;">
-				  <img src="skyfast.png" width="400px"/>
+				  <img src="skyfast.png" width="300px"/>
 				  <figcaption>This took 0.50 seconds!</figcaption>
 				</td>
 			  </tr>
 			  <tr>
 				<td style="text-align: center;">
-				  <img src="wall-eslow.png" width="400px"/>
+				  <img src="wall-eslow.png" width="300px"/>
 				  <figcaption>This took 3163 seconds, which is 52 minutes!</figcaption>
 				</td>
 				<td style="text-align: center;">
-				  <img src="wall-efast.png" width="400px"/>
+				  <img src="wall-efast.png" width="300px"/>
 				  <figcaption>This took 0.84 seconds!</figcaption>
 				</td>
 			  </tr>
 			  <tr>
 				<td style="text-align: center;">
-				  <img src="dragonslow.png" width="400px"/>
+				  <img src="dragonslow.png" width="300px"/>
 				  <figcaption>This took 2811 seconds, which is 47 minutes!</figcaption>
 				</td>
 				<td style="text-align: center;">
-				  <img src="dragonfast.png" width="400px"/>
+				  <img src="dragonfast.png" width="300px"/>
 				  <figcaption>This took 1.07 seconds!</figcaption>
 				</td>
 			  </tr>
@@ -262,28 +262,28 @@
 			space direction to local coordinates with wi = w2o * wi_world, creates a shadow ray from the hit point toward the
 			light, and tests for occlusion using the BVH. If no occlusion is found, it evaluates the BSDF as
 			f = isect.bsdf->f(w_out, wi) and computes the contribution as L_light += f * L_i * cos_theta(wi) / pdf. For area 
-			lights, it averages the results by dividing by the number of samples. The final result normalizes by the number of
-			lights with L_out /= scene->lights.size() and returns the total accumulated radiance L_out.</p>
+			lights, it averages the results by dividing by the number of samples. The final returns the total accumulated 
+			radiance L_out.</p>
 
 		<p>Here's some images with uniform hemisphere sampling:</p>
 		<div style="display: flex; flex-direction: column; align-items: center;">
 			<table style="width: 100%; text-align: center; border-collapse: collapse;">
 				<tr>
 					<td style="text-align: center;">
-						<img src="buildinguniform.png" width="400px"/>
+						<img src="buildinguniform.png" width="300px"/>
 						<figcaption>The building is all black because uniform hemispheric sampling does not include 
 							point light sources.</figcaption>
 					</td>
 					<td style="text-align: center;">
-						<img src="walleuniform.png" width="400px"/>
+						<img src="walleuniform.png" width="300px"/>
 						<figcaption>Wall-E is also all black when uniform hemispheric sampling is used.</figcaption>
 					</tr>
 					<tr>
 						<td style="text-align: center;">
-						<img src="CBbunny_H_64_32.png" width="400px"/>
+						<img src="CBbunny_H_64_32.png" width="300px"/>
 					</td>
 						<td style="text-align: center;">
-						<img src="CBspheresuniform.png" width="400px"/>
+						<img src="CBspheresuniform.png" width="300px"/>
 					</td>
 			 	 </tr>
 			</table>
@@ -294,18 +294,18 @@
 			<table style="width: 100%; text-align: center; border-collapse: collapse;">
 				<tr>
 					<td style="text-align: center;">
-					  <img src="buildingimportance.png" width="400px"/>
+					  <img src="buildingimportance.png" width="300px"/>
 					</td>
 					<td style="text-align: center;">
-						<img src="walleimportance.png" width="400px"/>
+						<img src="walleimportance.png" width="300px"/>
 					</td>
 				</tr>
 				<tr>
 					<td style="text-align: center;">
-					  <img src="bunny_64_32.png" width="400px"/>
+					  <img src="bunny_64_32.png" width="300px"/>
 					</td>
 					<td style="text-align: center;">
-						<img src="CBspheresimportance.png" width="400px"/>
+						<img src="CBspheresimportance.png" width="300px"/>
 					</td>
 				</tr>
 			</table>
@@ -325,21 +325,21 @@
 			<table style="width: 100%; text-align: center; border-collapse: collapse;">
 				<tr>
 					<td style="text-align: center;">
-						<img src="bunny_l1.png" width="400px"/>
+						<img src="bunny_l1.png" width="300px"/>
 						<figcaption>1 light ray</figcaption>
 					</td>
 					<td style="text-align: center;">
-						<img src="bunny_l4.png" width="400px"/>
+						<img src="bunny_l4.png" width="300px"/>
 						<figcaption>4 light rays</figcaption>
 					</td>
 				</tr>
 				<tr>
 					<td style="text-align: center;">
-						<img src="bunny_l16.png" width="400px"/>
+						<img src="bunny_l16.png" width="300px"/>
 						<figcaption>16 light rays</figcaption>
 					</td>
 					<td style="text-align: center;">
-						<img src="bunny_l64.png" width="400px"/>
+						<img src="bunny_l64.png" width="300px"/>
 						<figcaption>64 light rays</figcaption>
 					</td>
 				</tr>
@@ -388,10 +388,10 @@
 			<table style="width: 100%; text-align: center; border-collapse: collapse;">
 				<tr>
 					<td style="text-align: center;">
-						<img src="spheres1024.png" width="400px"/>
+						<img src="spheres1024.png" width="300px"/>
 					</td>
 					<td style="text-align: center;">
-						<img src="bunny1024.png" width="400px"/>
+						<img src="bunny1024.png" width="300px"/>
 					</td>
 				</tr>
 				<tr>
@@ -405,10 +405,10 @@
 			<table style="width: 100%; text-align: center; border-collapse: collapse;">
 				<tr>
 					<td style="text-align: center;">
-						<img src="bunny1024_direct.png" width="400px"/>
+						<img src="bunny1024_direct.png" width="300px"/>
 					</td>
 					<td style="text-align: center;">
-						<img src="bunny1024_indirect.png" width="400px"/>
+						<img src="bunny1024_indirect.png" width="300px"/>
 					</td>
 				</tr>
 			</table>
@@ -431,50 +431,50 @@
 			<table style="width: 100%; text-align: center; border-collapse: collapse;">
 				<tr>
 					<td style="text-align: center;">
-						<img src="bunny0false.png" width="400px"/>
+						<img src="bunny0false.png" width="300px"/>
 					</td>
 					<td style="text-align: center;">
-						<img src="bunny0true.png" width="400px"/>
-					</td>
-				</tr>
-				<tr>
-					<td style="text-align: center;">
-						<img src="bunny1false.png" width="400px"/>
-					</td>
-					<td style="text-align: center;">
-						<img src="bunny1true.png" width="400px"/>
+						<img src="bunny0true.png" width="300px"/>
 					</td>
 				</tr>
 				<tr>
 					<td style="text-align: center;">
-						<img src="bunny2falsefinal.png" width="400px"/>
+						<img src="bunny1false.png" width="300px"/>
 					</td>
 					<td style="text-align: center;">
-						<img src="bunny2true.png" width="400px"/>
-					</td>
-				</tr>
-				<tr>
-					<td style="text-align: center;">
-						<img src="bunny3falsefinal.png" width="400px"/>
-					</td>
-					<td style="text-align: center;">
-						<img src="bunny3true.png" width="400px"/>
+						<img src="bunny1true.png" width="300px"/>
 					</td>
 				</tr>
 				<tr>
 					<td style="text-align: center;">
-						<img src="bunny4falsefinal.png" width="400px"/>
+						<img src="bunny2falsefinal.png" width="300px"/>
 					</td>
 					<td style="text-align: center;">
-						<img src="bunny4true.png" width="400px"/>
+						<img src="bunny2true.png" width="300px"/>
 					</td>
 				</tr>
 				<tr>
 					<td style="text-align: center;">
-						<img src="bunny5falsefinal.png" width="400px"/>
+						<img src="bunny3falsefinal.png" width="300px"/>
 					</td>
 					<td style="text-align: center;">
-						<img src="bunny5true.png" width="400px"/>
+						<img src="bunny3true.png" width="300px"/>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;">
+						<img src="bunny4falsefinal.png" width="300px"/>
+					</td>
+					<td style="text-align: center;">
+						<img src="bunny4true.png" width="300px"/>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;">
+						<img src="bunny5falsefinal.png" width="300px"/>
+					</td>
+					<td style="text-align: center;">
+						<img src="bunny5true.png" width="300px"/>
 					</td>
 				</tr>
 			</table>
@@ -509,31 +509,31 @@
 			<table style="width: 100%; text-align: center; border-collapse: collapse;">
 				<tr>
 					<td style="text-align: center;">
-						<img src="bunny0russian.png" width="400px"/>
+						<img src="bunny0russian.png" width="300px"/>
 						<figcaption>0 bounce</figcaption>
 					</td>
 					<td style="text-align: center;">
-						<img src="bunny1russian.png" width="400px"/>
+						<img src="bunny1russian.png" width="300px"/>
 						<figcaption>1 bounce</figcaption>
 					</td>
 				</tr>
 				<tr>
 					<td style="text-align: center;">
-						<img src="bunny2russian.png" width="400px"/>
+						<img src="bunny2russian.png" width="300px"/>
 						<figcaption>2 bounce</figcaption>
 					</td>
 					<td style="text-align: center;">
-						<img src="bunny3russian.png" width="400px"/>
+						<img src="bunny3russian.png" width="300px"/>
 						<figcaption>3 bounce</figcaption>
 					</td>
 				</tr>
 				<tr>
 					<td style="text-align: center;">
-						<img src="bunny4russian.png" width="400px"/>
+						<img src="bunny4russian.png" width="300px"/>
 						<figcaption>4 bounce</figcaption>
 					</td>
 					<td style="text-align: center;">
-						<img src="bunny100russian.png" width="400px"/>
+						<img src="bunny100russian.png" width="300px"/>
 						<figcaption>100 bounce</figcaption>
 					</td>
 					
@@ -547,31 +547,31 @@
 			<table style="width: 100%; text-align: center; border-collapse: collapse;">
 				<tr>
 					<td style="text-align: center;">
-						<img src="bunnypixel1.png" width="400px"/>
+						<img src="bunnypixel1.png" width="300px"/>
 						<figcaption>1 pixel</figcaption>
 					</td>
 					<td style="text-align: center;">
-						<img src="bunnypixel2.png" width="400px"/>
+						<img src="bunnypixel2.png" width="300px"/>
 						<figcaption>2 pixel</figcaption>
 					</td>
 				</tr>
 				<tr>
 					<td style="text-align: center;">
-						<img src="bunnypixel4.png" width="400px"/>
+						<img src="bunnypixel4.png" width="300px"/>
 						<figcaption>4 pixel</figcaption>
 					</td>
 					<td style="text-align: center;">
-						<img src="bunnypixel16.png" width="400px"/>
+						<img src="bunnypixel16.png" width="300px"/>
 						<figcaption>16 pixel</figcaption>
 					</td>
 				</tr>
 				<tr>
 					<td style="text-align: center;">
-						<img src="bunnypixel64.png" width="400px"/>
+						<img src="bunnypixel64.png" width="300px"/>
 						<figcaption>64 pixel</figcaption>
 					</td>
 					<td style="text-align: center;">
-						<img src="bunnypixel1024.png" width="400px"/>
+						<img src="bunnypixel1024.png" width="300px"/>
 						<figcaption>1024 pixel</figcaption>
 					</td>
 				</tr>
@@ -615,11 +615,11 @@
 			<table style="width: 100%; text-align: center; border-collapse: collapse;">
 				<tr>
 					<td style="text-align: center;">
-						<img src="bunnypart5.png" width="400px"/>
+						<img src="bunnypart5.png" width="300px"/>
 						<figcaption>Here's the bunny normally rendered.</figcaption>
 					</td>
 					<td style="text-align: center;">
-						<img src="bunnypart5_rate.png" width="400px"/>
+						<img src="bunnypart5_rate.png" width="300px"/>
 						<figcaption>Here's the bunny with the sample rate.</figcaption>
 					</td>
 				</tr>
@@ -630,11 +630,11 @@
 			<table style="width: 100%; text-align: center; border-collapse: collapse;">
 				<tr>
 					<td style="text-align: center;">
-						<img src="spheressample.png" width="400px"/>
+						<img src="spheressample.png" width="300px"/>
 						<figcaption>Here's the spheres normally rendered.</figcaption>
 					</td>
 					<td style="text-align: center;">
-						<img src="spheressample_rate.png" width="400px"/>
+						<img src="spheressample_rate.png" width="300px"/>
 						<figcaption>Here's the spheres with the sample rate.</figcaption>
 					</td>
 				</tr>
