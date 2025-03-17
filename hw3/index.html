@@ -125,7 +125,7 @@
 			If not parallel, the algorithm proceeds to calculate barycentric coordinates using dot products and validates these
 			coordinates are within acceptable ranges. Finally, it computes the intersection distance and checks if it falls
 			within the ray's travel range.</p>
-		<p>For sphere intersection, implemented in Sphere::test(), has_intersection(), and intersect(), the process involves
+		<p>For sphere intersection, which is implemented in Sphere::test(), has_intersection(), and intersect(), the process involves
 			setting up and solving a quadratic equation. The algorithm transforms the ray to the sphere's local space, computes
 			the discriminant to determine if intersection occurs, and if positive, calculates two potential intersection
 			distances. It then checks if these intersections fall within the ray's travel range. When using the intersect()
@@ -271,12 +271,11 @@
 				<tr>
 					<td style="text-align: center;">
 						<img src="buildinguniform.png" width="300px"/>
-						<figcaption>The building is all black because uniform hemispheric sampling does not include 
-							point light sources.</figcaption>
+						<figcaption>Uniform hemispheric sampling makes the building all black.</figcaption>
 					</td>
 					<td style="text-align: center;">
 						<img src="walleuniform.png" width="300px"/>
-						<figcaption>Wall-E is also all black when uniform hemispheric sampling is used.</figcaption>
+						<figcaption>Wall-E is all black when uniform hemispheric sampling is used.</figcaption>
 					</tr>
 					<tr>
 						<td style="text-align: center;">
