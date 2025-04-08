@@ -507,24 +507,34 @@
 				</tr>
 				<tr>
 					<td style="text-align: center;">
-						<img src="part5_16.png" width="400px"/>
-						<figcaption>Here's the sphere with 16x16.</figcaption>
+						<img src="part5_bump_16.png" width="400px"/>
+						<figcaption>Here's the bump sphere with 16x16.</figcaption>
 					</td>
 					<td style="text-align: center;">
-						<img src="part5_128.png" width="400px"/>
-						<figcaption>Here's the sphere with 128x128. </figcaption>
+						<img src="part5_displace_16.png" width="400px"/>
+						<figcaption>Here's the displacement sphere with 16x16. </figcaption>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;">
+						<img src="part5_bump_128.png" width="400px"/>
+						<figcaption>Here's the bump sphere with 128x128.</figcaption>
+					</td>
+					<td style="text-align: center;">
+						<img src="part5_displace_128.png" width="400px"/>
+						<figcaption>Here's the displacement sphere with 128x128. </figcaption>
 					</td>
 				</tr>
 			</table>
 		</div>
 
 		<p>In comparing the two cloth simulation renders, the difference in sphere mesh resolution becomes immediately apparent.
-			The left image, rendered with a lower resolution of -o 16 -a 16, displays a coarser mesh where the cloth appears
+			When rendered with a lower resolution of -o 16 -a 16, displays a coarser mesh where the cloth appears
 			blocky and angular. Due to the limited number of vertices, the simulation cannot capture finer details, resulting in
 			large, rigid folds that expose the underlying geometric structure. The wrinkles appear exaggerated and abrupt, making
 			the cloth look less natural.</p>
 
-		<p>In contrast, the right image, generated with a much higher resolution of -o 128 -a 128, features a significantly more
+		<p>In contrast, when generated with a much higher resolution of -o 128 -a 128, features a significantly more
 			refined mesh. The increased polygon count allows for smoother deformations, enabling the simulation to create finer,
 			more natural-looking wrinkles. The cloth drapes more realistically, with subtle folds and soft transitions that
 			better mimic real fabric behavior. The higher resolution enhances the accuracy of the cloth dynamics, producing a
