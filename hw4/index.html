@@ -528,21 +528,37 @@
 			</table>
 		</div>
 
-		<p>In comparing the two cloth simulation renders, the difference in sphere mesh resolution becomes immediately apparent.
-			When rendered with a lower resolution of -o 16 -a 16, displays a coarser mesh where the cloth appears
-			blocky and angular. Due to the limited number of vertices, the simulation cannot capture finer details, resulting in
-			large, rigid folds that expose the underlying geometric structure. The wrinkles appear exaggerated and abrupt, making
-			the cloth look less natural.</p>
-
-		<p>In contrast, when generated with a much higher resolution of -o 128 -a 128, features a significantly more
-			refined mesh. The increased polygon count allows for smoother deformations, enabling the simulation to create finer,
-			more natural-looking wrinkles. The cloth drapes more realistically, with subtle folds and soft transitions that
-			better mimic real fabric behavior. The higher resolution enhances the accuracy of the cloth dynamics, producing a
-			more organic and visually convincing result.</p>
-			
-		<p>This comparison highlights the crucial role of mesh resolution in computational cloth simulations. A higher resolution
-			provides the necessary vertex density to capture intricate deformations, whereas a lower resolution limits detail and
-			results in a more rigid, artificial appearance.</p>
+		<p>Bump Mapping</p>
+		<ul>
+		  <li>
+			<strong>16x16 Mesh:</strong> The bump-mapped sphere appears smooth overall, with the brick texture simulated 
+			through changes in surface shading. The low resolution of the mesh limits the detail, and the illusion of depth is 
+			entirely dependent on lighting.
+		  </li>
+		  <li>
+			<strong>128x128 Mesh:</strong> The bump mapping remains consistent in appearance, as it does not modify the 
+			geometry of the mesh. The higher resolution does not significantly improve the perceived depth since bump mapping 
+			only alters surface normals for shading.
+		  </li>
+		</ul>
+		
+		<p>Displacement Mapping</p>
+		<ul>
+		  <li>
+			<strong>16x16 Mesh:</strong> The displacement-mapped sphere shows noticeable geometric deformation, but the low 
+			resolution results in a blocky and less detailed appearance. The brick pattern is visible but lacks refinement due 
+			to the coarse mesh.
+		  </li>
+		  <li>
+			<strong>128x128 Mesh:</strong> With a higher resolution, displacement mapping creates a much more detailed and 
+			realistic effect. The geometry of the sphere is deformed to match the brick texture accurately, resulting in
+			pronounced depth and a more natural appearance.
+		  </li>
+		</ul>
+		
+		<p>Key Observations: Bump mapping relies on shading tricks and does not modify geometry, so its effectiveness is 
+			independent of mesh resolution. Displacement mapping physically alters the mesh geometry, so higher resolutions 
+			significantly improve its realism and detail.</p>
 
 		<p>Here's the mirror shader with the sphere and cloth:</p>
 
